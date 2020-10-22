@@ -1,4 +1,6 @@
 import hou
+selection = hou.selectedNodes()
+nodeForCloning = hou.node('/obj/BuildingA_1/')
 
 def export(outputName, path):
     fileNode = hou.node(path)
@@ -6,10 +8,6 @@ def export(outputName, path):
     fileNode.parm('filemode').set(2)
     fileNode.cook()
     fileNode.parm('filemode').set(1)
-    
-selection = hou.selectedNodes()
-nodeForCloning = hou.node('/obj/BuildingA_1/')
-
 
 for node in selection:
     print node.name()
