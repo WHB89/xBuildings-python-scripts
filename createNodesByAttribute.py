@@ -52,3 +52,8 @@ for valueType in range(0,len(valuesList)):
     # no material
     # shopnet path variable machen
     # delete node aktiv setzen
+    
+
+
+
+
